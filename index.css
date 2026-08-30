@@ -6,11 +6,13 @@
 }
 
 :root {
-  --bg-color: black;
-  --text-main: #2d3436;
-  --text-muted: #636e72;
-  --accent: #4a7c59;
-  --accent-light: #e8f0ea;
+  --bg-color: #1e1e1e;
+  --text-main: #f5f5f5;
+  --text-muted: #b0b0b0;
+  --accent: #5c976d;
+  --accent-light: #2c3a32;
+  --header-bg: rgba(30, 30, 30, 0.85);
+  --footer-bg: rgba(30, 30, 30, 0.95);
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -20,7 +22,7 @@ body.site-body {
     sans-serif;
   line-height: 1.7;
   color: var(--text-main);
-  background: radial-gradient(circle at center, #ffffff 0%, #fdfaf6 100%);
+  background: var(--bg-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,7 +33,7 @@ body.site-body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(253, 250, 246, 0.8);
+  background-color: var(--header-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 1rem 2rem;
@@ -168,7 +170,7 @@ blockquote cite {
 
 .project-item:hover {
   border-left: 2px solid var(--accent);
-  background-color: rgba(74, 124, 89, 0.03);
+  background-color: rgba(74, 124, 89, 0.1);
   transform: translateX(5px);
 }
 
@@ -207,7 +209,7 @@ blockquote cite {
 }
 .btn-contact {
   background: var(--text-main);
-  color: #fff;
+  color: var(--bg-color);
 }
 .btn-contact:hover {
   transform: translateY(-3px);
@@ -218,7 +220,7 @@ blockquote cite {
 .site-footer {
   position: sticky;
   bottom: 0;
-  background-color: rgba(253, 250, 246, 0.9);
+  background-color: var(--footer-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 1.5rem;
